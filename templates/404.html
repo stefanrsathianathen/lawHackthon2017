@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+    <!--add searched -->
+    <title> 404</title> 
+            <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+   <body style="background-color:green;width:auto;height:auto;">
+      
+
+
+    <!-- Nav bar and search bar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <div class="text-center">
+      <a class="navbar-brand" href="\">Radias</a>
+    </div>
+    </div>
+    <div class="text-center">
+     <form action="{{url_for('search')}}" method="POST">
+                
+               
+                
+                <!-- <div class="row">
+                  <p>Product  <span><span> Country</p>
+                </div> -->
+
+                <!-- <input type='text' placeholder="Product" name = 'product'> -->
+                <div class="row">
+                 <select name='product' style="width: 200px;">
+                    <option value="Food">Food</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Electronics">Machinery</option>
+
+                    
+                </select>
+                <select name='country' style="width: 200px;">
+                    <option value="China">China</option>
+                    <option value="USA">USA</option>
+                    <option value="USA">New Zealand</option>
+                    <option value="USA">United Kingdom</option>
+                    <!-- <option value="">Electronics</option>
+                    <option value="Services">Services</option> -->
+                </select>
+                
+                <input type='submit' value = 'Search' class="btn btn-primary">
+                </div>
+            </form>
+    </div>
+    
+      </div>
+    </nav>
+    
+        <div class = "text-center vertical-center">
+            <img src="http://db3.memegenerator.net/cache/instances/folder6/500x/80112006/we-need-you-we-need-you-to-give-us-5000.jpg"alt="meme" style="width:auto;height:625px;">
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+        </div>
+    
+    </body>
+</html>

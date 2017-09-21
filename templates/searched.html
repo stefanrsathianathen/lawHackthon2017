@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+    <head>
+    <!--add searched -->
+    <title> {{product}}-{{country}}</title> 
+            <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+   <body>
+      
+
+
+    <!-- Nav bar and search bar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <div class="text-center">
+      <a class="navbar-brand" href="\">Radias</a>
+    </div>
+    </div>
+    <div class="text-center">
+     <form action="{{url_for('search')}}" method="POST">
+                
+               
+                
+                <!-- <div class="row">
+                  <p>Product  <span><span> Country</p>
+                </div> -->
+
+                <!-- <input type='text' placeholder="Product" name = 'product'> -->
+                <div class="row">
+                 <select name='product' style="width: 200px;">
+                    <option value="Food">Food</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Electronics">Machinery</option>
+
+                    
+                </select>
+                <select name='country' style="width: 200px;">
+                    <option value="China">China</option>
+                    <option value="USA">USA</option>
+                    <option value="USA">New Zealand</option>
+                    <option value="USA">United Kingdom</option>
+                    <!-- <option value="">Electronics</option>
+                    <option value="Services">Services</option> -->
+                </select>
+                
+                <!-- <input type='text' placeholder="Country" name = 'country'>  -->
+                <!-- <input type='text' placeholder="Home Country" name = 'home'>  -->
+                <input type='submit' value = 'Search' class="btn btn-primary">
+                </div>
+            </form>
+    </div>
+    
+      </div>
+    </nav>
+    <!-- End of nav bar code -->
+<!-- to do-
+menu 
+text
+dynamic -->
+<!-- where all the main text goes -->
+    <div class="container">
+        <h1>Exporting {{product}} to {{country}}</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                <p>Last Updated: July 2017</p>
+                </div>
+            </div> 
+        </div>
+        <div class="row"><p></p> </div>
+        <div class="row"><p></p> </div>
+        <p><i>With a population of over 1.3 billion, China has emerged as the world’s largest consumer market for food and beverage (F&B). Recent figures indicate that China is one of the fastest growing F&B markets in Asia, with an average annual growth rate of 35.4 per cent from 2011 to 2014. In 2016, the overall Chinese consumer expenditure for F&B products is expected to reach a total of US$976 billion.</i> </p>
+        <p><i>
+        Every year, a large amount of F&B imported into the country is either returned or destroyed due to lack of compliance or irregularity in food quality. This causes a significant loss to both the importing and exporting companies. In some cases, the import license may be revoked and the companies may be barred from future trade.
+        Keeping in mind the high business risks involved, companies must stay abreast of the latest food regulations and ensure the conformity of the products to the necessary import procedures.</i>
+        </p>
+        <div class="row"><p></p> </div>
+        <button data-toggle="collapse" data-target="#de" class="btn btn-info">Computer Generated Summary</button>
+
+                <div id="de" class="collapse">
+                   Keeping in mind the high business risks involved, companies must stay abreast of the latest food regulations and ensure the conformity of the products to the necessary import procedures. Recent figures indicate that China is one of the fastest growing F&B markets in Asia, with an average annual growth rate of 35.4 per cent from 2011 to 2014.
+                </div>
+        <div class="row"><p></p> </div>
+        <div class="row"><p></p> </div>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Mandatory Registration </a></li>
+          <li><a data-toggle="tab" href="#menu1">Documentation and pre-import licensing</a></li>
+          <li><a data-toggle="tab" href="#menu2">Ensure label compliance</a></li>
+          <li><a data-toggle="tab" href="#menu3">Organic Food Certification</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <div>
+            <h1>Is your food product properly registered to be exported to China?</h1>
+                <button data-toggle="collapse" data-target="#demo" class="btn btn-info">Computer Generated Summary</button>
+
+                <div id="demo" class="collapse">
+                   Keeping in mind the high business risks involved, companies must stay abreast of the latest food regulations and ensure the conformity of the products to the necessary import procedures. Every year, however, a large amount of food imported into the country is either returned or destroyed due to lack of compliance or irregularity in food quality. In times of greater transgression, the import license may be revoked and the companies may be barred from future trade.
+                </div>
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <p>China has a multi-layered food regulatory system to ensure the quality and safety of imported food items. Every year, however, a large amount of food imported into the country is either returned or destroyed due to lack of compliance or irregularity in food quality.
+            This causes a significant loss to both the importing and exporting companies. In times of greater transgression, the import license may be revoked and the companies may be barred from future trade. Keeping in mind the high business risks involved, companies must stay abreast of the latest food regulations and ensure the conformity of the products to the necessary import procedures.    </p>
+        </div>
+        <div>
+            <h1>The consequences of failing to achieve registration on time are dire!</h1>
+                <button data-toggle="collapse" data-target="#demo1" class="btn btn-info">Computer Generated Summary</button>
+
+                <div id="demo1" class="collapse">
+                   Chinese officials announced that from January 1, it would require infant formula products to be registered with the Chinese Food and Drug Administration (CFDA). In a statement to the Australian Stock Exchange, Bellamy's said it would not achieve registration in time, due to the extensive testing required by the CFDA. It is another blow for the former share market favourite, which has watched its share price plummet by about 60 per cent since December.
+                </div>
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <p>Bellamy's has revealed it has failed to have its products registered for sale in China, now that its manufacturing plant in Victoria is changing hands.
+            It is another blow for the former share market favourite, which has watched its share price plummet by about 60 per cent since December.
+            About 14 per cent, or $16 million worth, of the Tasmanian infant milk formula manufacturers' products are sold in China.
+            Chinese officials announced that from January 1, it would require infant formula products to be registered with the Chinese Food and Drug Administration (CFDA).
+            In a statement to the Australian Stock Exchange, Bellamy's said it would not achieve registration in time, due to the extensive testing required by the CFDA.
+            The regulatory change will see earnings hit from the first quarter of 2018.
+            Source: ABC</p>
+        </div>
+
+        <div class="row"><p></p> </div>
+        <div class="row"><p></p> </div>
+
+        <div class="container">
+         <div class="row">
+
+         
+            
+            <h2>Project Overview</h2>
+             
+        
+        
+             <p>Estimated cost: $5K - $10K AUD</p>
+             <p>Estimated timeframe: 3 months - 9 months </p>
+         
+         </div>
+          <div class="row">
+            <div class="col-md-7">
+                <h1>Checklist</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row"><p></p> </div>
+                        <div class="row"><p></p> </div>
+                        <div class="row"><p></p> </div>
+                        <div class="row"><p></p> </div>
+                        <div class="row"><p></p> </div>
+                        <div class="row"><p></p> </div>
+                        <div class="row"><p></p> </div>
+                        <div class="row"><p></p> </div>
+                        <h3>Mandatory Registrations</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="checkbox">Registered as a foreign trade operator with the Ministry of Commerce<br>
+                        <input type="checkbox">Registered with the State Certification and Accreditation Administration if your
+                        product is on the ‘List of Food Imports Subject to Enterprise Registration.'<br>    
+                        <input type="checkbox">Check that your product is prescribed under the jurisdiction of the AQSIQ Food
+                        Safety Bureau.<br>
+                        <input type="checkbox">Registered with the Chinese Food and Drug Administration (CFDA)<br>
+                        <input type="checkbox">Register each shipment of food products online with the Administration of Quality
+                        Supervision, Inspection and Quarantine (AQSIQ) department for tracking purposes.<br>
+
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            <div class="col-md-5">
+                <h1>Contact law firm</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="data:image/jpeg;base64,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" alt="rick" style="width:304px;height:228px;">
+                    </div>
+                    <div class="col-md-4">
+                        <p>infor</p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+             <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+           
+            <h1>Do you have proper documentation for importation?</h1>
+                <button data-toggle="collapse" data-target="#demo2" class="btn btn-info">Computer Generated Summary</button>
+
+                <div id="demo2" class="collapse">
+                   Before the shipment of products, you are required to submit documents on products’ quality, quarantine, origin, and import control, along with a detailed packing list and a description of the packaging material, among other documents.
+                </div>
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <p>China has strict and complex documentation requirements for the majority of food products imported into the country. Before the shipment of products, you are required to submit documents on products’ quality, quarantine, origin, and import control, along with a detailed packing list and a description of the packaging material, among other documents.   </p>
+         </div>
+        
+
+        <div id="menu2" class="tab-pane fade">
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            
+            <h1>Are all of your products properly labelled?</h1>
+                <button data-toggle="collapse" data-target="#demo3" class="btn btn-info">Computer Generated Summary</button>
+
+                <div id="demo3" class="collapse">
+                   While you need to ensure your products labelling is compliant with Chinese regulations, you also need to consider how your products are packaged from a consumer and market perspective. For example, you will have to consider whether it’s best to cover existing packaging with a new label, as well as how your competitors are re-designing their labelling to gain a competitive edge with the consumers in the market.
+                </div>
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <p>Every food product imported in China must be labelled in simplified Chinese characters to complete the Customs clearance. The general rules of the labelling of pre-packaged food, GB7718-2011, specifies the labelling requirements on layout and content of pre-packaged foods in China. 
+            While you need to ensure your products labelling is compliant with Chinese regulations, you also need to consider how your products are packaged from a consumer and market perspective. For example, you will have to consider whether it’s best to cover existing packaging with a new label, as well as how your competitors are re-designing their labelling to gain a competitive edge with the consumers in the market.</p>
+           </div>
+       
+
+        <div id="menu3" class="tab-pane fade">
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <div>
+            <h1>Does your food have proper organic certification in China?</h1>
+                <button data-toggle="collapse" data-target="#demo4" class="btn btn-info">Computer Generated Summary</button>
+
+                <div id="demo4" class="collapse">
+                   While you need to ensure your products labelling is compliant with Chinese regulations, you also need to consider how your products are packaged from a consumer and market perspective. For example, you will have to consider whether it’s best to cover existing packaging with a new label, as well as how your competitors are re-designing their labelling to gain a competitive edge with the consumers in the market.
+                </div>
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <p>Once the shipment arrives in China, the food products are inspected by Customs officials for review of relevant shipping documentation and labelling requirements. The CIQ sanitary certificate is issued only if the documents are complete. This certificate is issued for every shipment of product.
+            If the shipment is missing any documents and custom seizes it, you may either provide a CIQ declaration or provide the missing documents. To obtain a CIQ declaration, you must provide the following documents: your business license, importing license, quota certificate, safety compliance declaration, an introduction to your company, and product information in detail.
+            If you are exporting food products for the first time, the process is more complex though the procedure is relaxed after successive exports. However, AQSIQ officials may still inspect labels and samples in the following shipments.</p>
+           </div>
+
+           <div>
+            <h1>Organic Food Items Market is Growing</h1>
+                <button data-toggle="collapse" data-target="#demo5" class="btn btn-info">Computer Generated Summary</button>
+
+                <div id="demo5" class="collapse">
+                   The organic food market in China has tripled since 2007 to currently account for 1.01 percent of total food consumption, which is still lower than the 5 to 8 percent of the market in areas like Europe and the U.S. Current rough estimates for the market value of organic imports are around US$20 million, with consumers typically middle and upper class Chinese with children.In a consumer study carried out on 204 Chinese organic consumers in Beijing and Shanghai, 71 percent were ready to pay a premium of 20 to 50 percent for organic products.
+                </div>
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <p>Of particular interest among food imports are organic food items. Once seen as a luxury food item, imported organic foods are an increasingly accessible option for a Chinese consumer base with a growing disposable income. The organic food market in China has tripled since 2007 to currently account for 1.01 percent of total food consumption, which is still lower than the 5 to 8 percent of the market in areas like Europe and the U.S. Current rough estimates for the market value of organic imports are around US$20 million, with consumers typically middle and upper class Chinese with children. In a consumer study carried out on 204 Chinese organic consumers in Beijing and Shanghai, 71 percent were ready to pay a premium of 20 to 50 percent for organic products. The top five reasons for buying organic were all related to food quality assurance.</p>
+           </div>
+         <div>
+            <h1>Alerts</h1>
+                <button data-toggle="collapse" data-target="#demo5" class="btn btn-info">Computer Generated Summary</button>
+
+                <div id="demo5" class="collapse">
+                   If imported organic products have not received a Chinese organic certificate, but display ‘organic’ on product packages, labels, instructions, or promotion materials; it shall be reported as a ‘major issue’. Information being reported to this department includes inspection number, product name and quantity (weight), trading value, organic certificate number and the result of the inspection and quarantine.
+                </div>
+            <div class="row"><p></p> </div>
+            <div class="row"><p></p> </div>
+            <p> From October 2011, Chinese port officials have adopted a ‘case-by-case’ reporting system based on the entry of organic products. In other words, each batch of imported organic products shall be reported to the Certification Supervision department within three days after it has had an inspection and quarantine. Information being reported to this department includes inspection number, product name and quantity (weight), trading value, organic certificate number and the result of the inspection and quarantine. If imported organic products have not received a Chinese organic certificate, but display ‘organic’ on product packages, labels, instructions, or promotion materials; it shall be reported as a ‘major issue’.
+            Organic products that have not been issued a Chinese organic certificate can be imported as conventional products after they have been modified and comply with the relevant regulations and standards. If this is not possible, these products shall be destroyed or re-exported. 
+            </p>
+           </div>
+       </div>
+      
+   </body>
+</html>
